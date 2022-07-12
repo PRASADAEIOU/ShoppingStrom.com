@@ -73,7 +73,8 @@ p{
     background: #563434;
 }
 .header{
-    background: radial-gradient(#fff,#047BD5);
+    
+    background-attachment: scroll;
 }
 .header .row{
     margin-top: 50px;

@@ -5,6 +5,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    
+ 
 }
 .navbar{
     display: flex;
@@ -72,9 +74,7 @@ p{
 .btn:hover{
     background: #563434;
 }
-.header{
-    background: radial-gradient(#fff,#047BD5);
-}
+
 .header .row{
     margin-top: 50px;
 }
@@ -141,7 +141,7 @@ h4{
     transform: translateX(-5px);
 }
 .offer{
-    background: radial-gradient(#fff,#047BD5);
+    
     margin-top: 60px;
     padding: 20px 0 ;
 }
@@ -204,7 +204,7 @@ html, body {
 
 /* Left Column */
 .left-column img {
-  width: 100%;
+  width: 45%;
   position: absolute;
   left: 0;
   top: 0;
@@ -218,6 +218,7 @@ html, body {
 
 
 /* Right Column */
+
 
 /* Product Description */
 .product-description {
@@ -291,6 +292,9 @@ html, body {
 .color-choose input[type="radio"]#black + label span {
   background-color: #323232;
 }
+.color-choose input[type="radio"]#yellow + label span {
+  background-color: #f4f81d;
+}
 
 .color-choose input[type="radio"]:checked + label span {
   background-image: url(images/check-icn.svg);
@@ -361,6 +365,7 @@ html, body {
 }
 
 .cart-btn {
+
   display: inline-block;
   background-color: #7DC855;
   border-radius: 6px;
@@ -387,7 +392,7 @@ html, body {
   }
 
   .left-column img {
-    width: 300px;
+    width: 250px;
     right: 0;
     top: -65px;
     left: initial;
@@ -396,7 +401,7 @@ html, body {
 
 @media (max-width: 535px) {
   .left-column img {
-    width: 220px;
-    top: -85px;
+    width: 200px;
+    top: -95px;
   }
 }
