@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<title> Payment Form</title>
+<link href="payment.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="wrapper">
+<h2> payment Form</h2>
+<form action="" method="POST">
+<h4>Account</h4>
+<div class="input_group">
+<div class="input_box">
+   <input type="text" placeholder="First Name" required
+      class="name">
+      <i class="fa fa-user icon"></i>
+      </div><br>
+
+<div class="input_group">
+<div class="input_box">
+   <input type="text" placeholder="Last Name" required
+      class="name">
+      <i class="fa fa-user icon"></i>
+      </div><br>
+      <h4>Gender</h4>
+<input type="radio" id="gender" name="Gender" value="Male"/>Male
+<input type="radio" id="gender" name="Gender" value="Female"/>Female<br>
+<br><div class="input_group">
+<div class="input_box">
+   <input type="text" placeholder="Address" required
+      class="name">
+      <i class="fa fa-user icon"></i>
+      </div>
+<br>
+<div class="input_group">
+<div class="input_box">
+   <input type="text" placeholder="Address Line-2" required
+      class="name">
+      <i class="fa fa-user icon"></i>
+      </div><br>
+<label for="Country">Choose Country:
+</label>
+
+<select name="Country" id="Country">
+  <option value="India">India</option>
+  <option value="China">China</option>
+  <option value="Japan">Japan</option>
+  <option value="Germany">Germany</option>
+</select>
+<br>
+<br>
+
+<br><label for="Region">Choose Region:
+</label>
+
+<select name="Region" id="Region">
+  <option value="Tamilnadu">Tamilnadu</option>
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Karnataka">Karnataka</option>
+</select>
+<br>
+
+<br><h4> Zip/Postal code<div class="input_group">
+<div class="input_box">
+   <input type="text" placeholder="Zip/Postal code" required
+      class="name">
+      <i class="fa fa-user icon"></i>
+      </div>
+<br><h4> Phone No<div class="input_group">
+<div class="input_box">
+   <input type="text" placeholder="Phone no" required
+      class="name">
+      <i class="fa fa-user icon"></i>
+      </div><br>
+      <div class="input_group">
+         <div class="input_box">
+            <h4> Payment details</h4>
+            <input type="radio" name="pay" class="radio"
+            id="bc1" checked>
+            <label for="bc1"><span>
+               <i class="fa fa-cc-visa"></i>CreditCard
+               </span></label>
+               <input type="radio" name="pay" class="radio"
+               id="bc2" checked>
+               <label for="bc2"><span>
+                  <i class="fa fa-cc-Paypal"></i>Paypal
+                  </span></label>
+              </div>
+              </div>
+              <br><div class="input_group">
+               <div class="input_box">
+                  <input type="tel" class="name" placeholder="card Number 1111-2222-3333" required>
+               </div>
+              </div>
+              <br><div class="input_group">
+               <div class="input_box">
+                  <input type="tel" class="name" placeholder="Card CVC 632" required>
+               </div>
+              </div>
+              <br><div class="input_box">
+               <input type="number" class="name" placeholder="Enter Amount" required>
+              </div>
+              <br><div class="input_group">
+               <div class="input_Box">
+                  <button type="submit">Pay Now</button>
+               </div>
+              </div>
+
+      </body>
+     
+     
+        </html>
