@@ -1,0 +1,80 @@
+create database shopping_storm;
+
+
+
+
+
+
+
+
+use shopping_storm;
+
+create table register
+(userid int identity(101,1) primary key,
+emailid nvarchar(max) not null,
+password nvarchar(max) not null,
+mobilenumber numeric not null);
+
+
+create table login
+(userid int constraint fk_register foreign key (userid) references register(userid),
+password nvarchar(max) not null);
+
+
+drop table login
+
+select * from login
+
+create table suppliertable
+(supplierid int  primary key,
+contactname varchar(max) not null,
+emailid     nvarchar(max) not null,
+phone     numeric(12) not null,
+discountavailable money not null,
+address nvarchar(max) not null);
+
+
+
+
+create table categorys
+(cid int primary key,
+cname varchar(max) not null,
+cimage image not null,
+cdescription nvarchar(max) not null);
+
+create table producttable
+(pid  int identity(10001,1) primary key,
+pname varchar(max) not null,
+pimage image not null,
+pprice money not null,
+psize  int not null,
+pquantity numeric not null,
+pdes  nvarchar(max) not null,
+categoryid int constraint fk_category foreign key(categoryid) references categorys (cid),
+pdiscount money not null,
+supplierid int constraint fk_suppliertable foreign key (supplierid) references suppliertable(supplierid)); 
+
+
+
+create table orders
+(oid int primary key,
+oprice money not null,
+oquantity int  not null,
+osize  varchar(max) not null,
+odate date not null,
+odiscount money not null,
+pid int constraint fk_producttable foreign key (pid) references producttable (pid),
+userid int constraint fk_registers foreign key (userid) references  register (userid));
+
+
+
+create table  cupons
+(discountid int primary key,
+cup_name varchar(max) not null,
+disc_percent  money not null);
+
+alter table producttable
+add pdiscountid int constraint fk_cuponstable foreign key (pdiscountid)  references cupons(discountid);
+
+alter table producttable 
+drop column pdiscount;
