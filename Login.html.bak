@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><html>
+<head>
+      <title>Online Shopping Site</title>
+	  <link rel="icon" href="C.ico"></link>
+	  <link rel="stylesheet" href="E.css"></link>
+</head>
+<body>
+<div id="div">
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<center><strong><em><h1 id="h"><marquee scrollamount="7" >WELCOME TO SHOPPING STORM</marquee></h1></strong></em></center></img>
+	
+    <center><h1>Login</h1></center>
+     <center><form>
+           <label>User Name<sup style="color:red">*</sup></label>
+           <input type="Text required"></input>
+           <br></br>
+           <label>Email-ID<sup style="color:red">*</sup></label>
+           <input type="text"required placeholder="                        ab123@"></input>
+           <br></br>
+	 <label>Password<sup style="color:red">*</sup></label>
+           <input type="text"></input>
+           <br></br>
+ 	<input type="button"value="Log In"><mark text =></input></input>
+	<br></br>
+	<em><a href="F.html"target="_blank" style ="background-color:white;"><strong>Forgot Password....?</a></em></strong>
+	<br></br>
+	<a href="R.html"target="_blank"style ="color:blue;"><strong>Create New Account....</style></a></strong>
+	<br></br>
+           </form></center>
+		   </div>
+         </body>
+		
+           </html>

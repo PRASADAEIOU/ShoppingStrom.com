@@ -1,0 +1,16 @@
+.kc{
+   width: 940;
+   background-color: aqua;
+}
+body{
+    background-color: rgb(253, 121, 33);
+}
+li{
+    color: white;
+    display: inline;
+    
+}
+    li a{
+        color: white;
+        
+    }

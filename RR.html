@@ -1,0 +1,70 @@
+<html>
+<head>
+      <title>HTML form</title>
+</head>
+<body>
+      <script>
+            
+		function validate(){
+			var firstname=document.myform.firstname.value;
+			var lastname=document.myform.lastname.value;
+                  var Mobilenumber = document.myform.Mobilenumber.value;
+                  var Email=document.myform.Email.value;
+
+
+			if(firstname==""){
+				alert("firstname is mandatory");
+				document.myform.firstname.focus();
+				return false;
+
+			}
+			else if(lastname==""){
+				alert("lastname is mandatory");
+				document.myform.lastname.focus();
+				return false;
+			}
+                  else if(Mobilenumber==""){
+				alert("Mobile number is mandatory");
+				document.myform.Mobilenumber.focus();
+				return false;
+			}
+                  else if(Email==""){
+				alert("Email is mandatory");
+				document.myform.Email.focus();
+				return false;
+			}
+                  
+                  
+		}
+            </script></body>
+<body style="background-image: url('ECOM.jpg');">
+	<br></br>
+<font color="white">
+    <h1>Registration Form</h1>
+    <form name="myform" onclick="return validate()">
+	<br></br>
+     <h3>
+           <label>First Name<sup style="color:red">*</sup></label>
+           <input type="Text" name="firstname"  placeholder="First name"></input>
+           <br></br>
+           <label>Last Name<sup style="color:red">*</sup></label>
+           <input type="Text" name="lastname" placeholder="Last name"></input>
+           <br></br>
+           <label>Mobile number<sup style="color:red">*</sup></label>
+           <input type="number" name="Mobilenumber"placeholder="Mobile number"></input>
+           <br></br>
+           <label>Enter Email-ID<sup style="color:red">*</sup></label>
+           <input type="text" name="Email"placeholder="Enter your mail"></input>
+     
+           <br></br>
+     
+	     <label>Gender</label>
+           <input type="radio"name="abc">Male</input>
+           <input type="radio"name="abc">Female</input>
+           <input type="radio"name="abc">Others</input>
+           <br></br>
+ 		<input type="submit"value="Register"<mark style="background-color:cyan;"></input>
+           <input type="submit"value="Reset"<mark style="background-color:cyan;"></input>
+           </font></h3> </form>
+           </body>
+           </html>
