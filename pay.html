@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+            <title>Shopping Storm</title>
+
+        <LINK REL="ICON" HREF="https://th.bing.com/th/id/OIP.m1QSHONncbCxJCJLnhWI7QHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <meta charset="UTF-8">
+
+        <style>
+
+        body{
+
+             font-family: sans-serif;
+
+           color: #262626;           
+
+        }
+
+        .container{
+
+        padding-right: 15px;
+
+        padding-left: 15px;
+
+        margin-right: auto;
+
+        margin-left: auto;
+
+        }
+
+        @media (min-width: 1200px)
+
+        {
+
+         .container{
+
+          max-width: 1140px;
+
+         }
+
+        }
+
+        .title{
+
+        background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+
+        border-radius:5px 5px 0 0 ;
+
+        padding: 20px;
+
+        color: #f6f6f6;
+
+        }
+
+        h2{
+
+         margin: 0;
+
+        padding-left: 15px; 
+
+        }
+
+        .Yorder{
+
+         margin-top: 15px;
+
+        height: 600px;
+
+        padding: 20px;
+
+        border: 1px solid #dadada;
+
+        }
+
+
+
+        th{
+
+         border-bottom: 1px solid #dadada;
+
+         padding: 10px 0;
+
+        }
+
+        tr>td:nth-child(1){
+
+         text-align: left;
+
+         color: #2d2d2a;
+
+        }
+
+        tr>td:nth-child(2){
+
+        text-align: right;
+
+        color: #52ad9c;
+
+        }
+
+         td{
+
+            border-bottom: 1px solid #dadada;
+
+            padding: 25px 25px 25px 0;
+
+            }
+
+
+
+        p{
+
+                display: block;
+
+                color: #888;
+
+                margin: 0;
+
+                padding-left: 25px;
+
+        }
+
+        button{
+
+            width: 100%;
+
+            margin-top: 10px;
+
+            padding: 30PX;
+
+            border: none;
+
+             border-radius: 30px;
+
+             background: #52ad9c;
+
+             color: #fff;
+
+              font-size: 15px;
+
+              font-weight: bold;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Payments</h2>
+
+            </div>
+
+            <div class="Yorder">
+
+              <table>
+
+                <tr>
+
+                  <th colspan="2">Your order</th>
+
+                </tr>
+
+                <tr>
+
+                  <td>Product Name x (Qty)</td>
+
+                  <td>$88.00</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>Subtotal</td>
+
+                  <td>$88.00</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>Shipping</td>
+
+                  <td>Free shipping</td>
+
+                </tr>
+
+              </table><br>
+
+              <div>
+
+                <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+
+              </div>
+
+              <p>
+
+                  Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+
+              </p>
+
+              <div>
+
+                <input type="radio" name="dbt" value="cd"> Cash on Delivery
+
+              </div>
+
+              <div>
+
+                <input type="radio" name="dbt" value="cd"> Paypal <span>
+
+                <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+
+                </span>
+
+              </div>
+
+              <button type="button">Place Order</button>
+
+            </div>
+
+           </div>
+
+          </div>     
+
+    </body>
+
+</html>
