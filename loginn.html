@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> Login and Registration form</title>
+        <link rel="stylesheet" href="L.css">
+    </head>
+    <body>
+          <div class="hello">
+            <div class="logo">
+                <img src="screen2-removebg-preview (1).png" width="400px">
+            </div>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+            <form id="login" class="input-group">
+                    <input type="text"class="input-field" placeholder="User Id" required>
+                    <input type="text"class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class ="check-box"><span>Remember Password</span>
+                    <button type="submit" class="Submit-btn">Log In</button>
+                </form>
+            <form id="register" class="input-group">
+                    <input type="text"class="input-field" placeholder="User Id" required>
+                    <input type="email"class="input-field" placeholder="Email Id" required>
+                    <input type="text"class="input-field" placeholder="Enter Password" required>
+                    <input type="tel"class="input-field" placeholder="Enter Mobile Number" required>
+                    <input type="checkbox" class ="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="Submit-btn">Register</button>
+                </form>
+            </div>
+     </div>
+     <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        } 
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        } 
+        function validate(){
+            var email=document.login.email.value;
+            var Password = document.login.Password.value;
+
+            if(email==""){
+                alert("Email is mandatory");
+                document.login.email.focus();
+                return false;
+
+            }
+            else if(Password==""){
+                alert("password is mandatory");
+                document.login.Password.focus();
+                return false;
+            }
+        }
+        
+
+     </script>
+    </body>
+</html>
